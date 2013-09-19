@@ -1,0 +1,60 @@
+= findplace
+
+ findplace is a gem that allows to search for locations nearby.For eg: User can search for 'Hotels' nearby by passing the request as "hotel",
+ the gem will access the user-ip to find the location of the IP and then return all locations matching the request.
+
+== Installation
+
+=== The master branch supports versions >= Rails 3
+
+Add the gem to the gemfile:
+  gem "findplace"
+
+== Usage
+
+To find a location near you:
+
+	FindPlace.search_nearby(google_places_api_key,client_ip,type)
+	
+	eg: FindPlace.search_nearby("goole_api_key",10.10.10.10,"school")
+	returns the array of locations of all the schools within 5000 meters of the location of the IP 10.10.10.10
+
+	If the google_api_key is invalid,result would be "Invalid API key"
+	If the Geocoder doesnot respond before time out,response would be "No Results,Request Time Out"
+	If the request doesnot produce any results,response would be "Sorryyy...No results for your request"
+
+
+
+== Comments/Requests
+
+If anyone has comments or questions please let me know (krxcet@gmail.com or kannanr@qburst.com).
+If you have updates or patches or want to contribute I would love to see what you have or want to add.
+
+
+== Note on Patches/Pull Requests
+
+* Fork the project.
+* Make your feature addition or bug fix.
+* Add tests for it. This is important so I don't break it in a future version unintentionally (act_as_buddy uses Shoulda and Dummier)
+* Send me a pull request. Bonus points for topic branches.
+
+
+== Contributers
+
+This list is open to all. You are all welcome :).
+
+* Manisha Haridas
+  * Github: https://github.com/manishaharidas
+ 
+* Anil Dias Davis aka "Pottan"
+  * Github: https://github.com/anildias 
+  
+* Sooraj S 
+  * Github: https://github.com/ssooraj 
+
+* Anand Ponnappan
+  * Github: https://github.com/anandqbnrd
+
+
+Copyright (c) 2013 QBurst(qbruby@qburst.com). See LICENSE.txt for
+further details.
