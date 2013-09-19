@@ -15,7 +15,7 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "findplace"
-  gem.homepage = "http://github.com/ssooraj/findplace"
+  gem.homepage = "http://github.com/qburstruby/findplace"
   gem.license = "MIT"
   gem.summary = %Q{Google Places API made easy}
   gem.description = %Q{"A gem that uses the Google Places API to find the Location of your machine and returns with the name of all places matching the search type"}

@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
     "test/helper.rb",
     "test/test_findplace.rb"
   ]
-  s.homepage = "http://github.com/ssooraj/findplace"
+  s.homepage = "http://github.com/qburstruby/findplace"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.25"
