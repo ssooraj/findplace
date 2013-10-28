@@ -9,8 +9,9 @@ class FindPlace
     Class method that reads the client IP,decodes it to find the location coordinates using GeoCoder 
     Uses the decoded coordinates and Client Request Type to find locations using GooglePlaces API
 =end
-    def self.search_nearby(google_api_key,client_ip,type)  
-        client_ip = '115.248.107.225'  
+    def self.search_nearby(google_api_key,client_ip,type)
+        #ip which we used to test  
+        #client_ip = '115.248.107.225'  
         coordinates=Geocoder.coordinates(client_ip)
         begin
             if coordinates.nil?
