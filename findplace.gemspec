@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["anildias"]
-  s.date = "2013-09-19"
+  s.date = "2013-10-28"
   s.description = "\"A gem that uses the Google Places API to find the Location of your machine and returns with the name of all places matching the search type\""
   s.email = "qbruby@qburst.com"
   s.extra_rdoc_files = [
